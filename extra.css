@@ -1,4 +1,8 @@
 /* ---------- LAPTOP ---------- */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
 body.shop-page { background: #202326; }
 
 /* short banner, reusing your hero image */
