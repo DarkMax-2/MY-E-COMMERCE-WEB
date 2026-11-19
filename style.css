@@ -6,6 +6,10 @@
   --ash: #2B2F32;       /* dark base */
   --ash-soft: #3A3F42;  /* lighter ash for menus */
 }
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { overflow-x: hidden; }
