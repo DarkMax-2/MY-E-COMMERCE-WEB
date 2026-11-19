@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyShop | Modern Streetwear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <symbol id="heart" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+    </svg>
+    <section class="hero">
+    <!-- NAVBAR -->
+      <nav class="navbar">
+        <a href="index.html" class="logo">MYSHOP</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="New-Arrivals.html?category=new">New</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+          <a href="shop.html" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          </a>
+          <a href="register.html" id="userLink" aria-label="Account" class="nav-account">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+          </a>
+          <a href="account.html#cart" class="cart-link" aria-label="Cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
+            <span class="cart-count">0</span>
+          </a>
+          <button class="menu-btn" id="menuBtn" aria-label="Menu">&#9776;</button>
+        </div>
+      </nav>
+      <div class="user-float" id="userFloat" hidden>
+        <div class="user-float-avatar" id="floatAvatar">?</div>
+        <div class="user-float-info">
+          <p class="user-float-hi">Hi, <span id="floatName"></span></p>
+          <div class="user-float-links">
+            <a href="account.html#profile">Profile</a>
+            <a href="account.html#cart">Cart</a>
+          </div>
+        </div>
+      </div>
+   <!-- HERO CONTENT -->
+      <div class="hero-content">
+   <!-- LEFT SIDE: h1, p, button -->
+        <div class="hero-left">
+          <p class="eyebrow">New collection 2026</p>
+          <h1>Wear what<br><em>moves you</em></h1>
+          <p class="lead">Modern everyday clothing made for comfort, confidence and the street.</p>
+          <a href="shop.html" class="btn">Shop now <span aria-hidden="true">&rarr;</span></a>
+        </div>
+    <!-- RIGHT SIDE: p, small image, p -->
+        <div class="hero-right">
+          <p class="small-title">Fresh drops<br>every week</p>
+          <a href="shop.html" class="thumb-link"><img src="img/side.1.jpg" alt="Featured jacket" class="thumb"></a>
+          <p class="small-text"><span>01</span> Layer up with our latest jackets, tees and sneakers.</p>
+        </div>
+      </div>
+    </section>
+<!--------FEATURE STRIP------>
+    <section class="features">
+      <div class="features-inner">
+        <div class="feature">
+          <span class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h11v10H2z"/><path d="M13 9h4l3 3v4h-7"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/></svg>
+          </span>
+          <div>
+            <h3>Free Shipping</h3>
+            <p>On all orders over $100</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+          </span>
+          <div><h3>Easy Returns</h3><p>Hassle-free within 30 days</p></div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+          </span>
+          <div><h3>Secure Checkout</h3><p>Your data stays safe with us</p></div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.3 6.8 19l1-5.8L3.6 9.1l5.8-.8z"/></svg>
+          </span>
+          <div><h3>Quality Pieces</h3><p>Made to last, made to move</p></div>
+        </div>
+      </div>
+<!-- SHOP BY CATEGORY (a div, not a section) -->
+      <div class="section" id="categories">
+        <div class="section-inner">
+          <div class="section-head">
+            <h2>Shop by Category</h2>
+            <a href="shop.html" class="view-all">View all &rarr;</a>
+          </div>
+          <div class="cat-grid">
+            <a href="shop.html?category=hoodies" class="cat-card">
+              <h3>Hoodies</h3><span class="shop-now">Shop Now &rarr;</span>
+              <div class="card-img"><img src="img/1.jpg" alt="Hoodies"></div>
+            </a>
+            <a href="shop.html?category=jackets" class="cat-card">
+              <h3>Jackets</h3><span class="shop-now">Shop Now &rarr;</span>
+              <div class="card-img"><img src="img/2.jpg" alt="Jackets"></div>
+            </a>
+            <a href="shop.html?category=jeans" class="cat-card">
+              <h3>Jeans</h3><span class="shop-now">Shop Now &rarr;</span>
+              <div class="card-img"><img src="img/3.jpg" alt="Jeans"></div>
+            </a>
+            <a href="shop.html?category=shoes" class="cat-card">
+              <h3>Shoes</h3><span class="shop-now">Shop Now &rarr;</span>
+              <div class="card-img"><img src="img/4.jpg" alt="Shoes"></div>
+            </a>
+            <a href="shop.html?category=caps" class="cat-card">
+              <h3>Caps</h3><span class="shop-now">Shop Now &rarr;</span>
+              <div class="card-img"><img src="img/5.jpg" alt="Caps"></div>
+            </a>
+            <a href="shop.html?category=bags" class="cat-card">
+              <h3>Bags</h3><span class="shop-now">Shop Now &rarr;</span>
+              <div class="card-img"><img src="img/6.jpg" alt="Bags"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+<!-- BEST SELLERS (a div, not a section) -->
+      <div class="section" id="best-sellers">
+        <div class="section-inner">
+          <div class="section-head">
+            <h2>Best Sellers</h2>
+            <a href="bestseller.html" class="view-all">View all &rarr;</a>
+          </div>
+          <div class="product-grid">
+            <article class="product-card">
+              <div class="img-wrap">
+                <a href="product.html?id=1" class="card-img" aria-label="Midnight Hoodie"><img src="img/1.jpg" alt="Midnight Hoodie"></a>
+                <button class="heart" data-id="1" aria-label="Save"><svg width="16" height="16"><use href="#heart"/></svg></button>
+              </div>
+              <a href="product.html?id=1" class="p-name">Midnight Hoodie</a>
+              <p class="price">$45</p>
+            </article>
+            <article class="product-card">
+              <div class="img-wrap">
+                <a href="product.html?id=6" class="card-img" aria-label="Runner One"><img src="img/6.jpg" alt="Runner One"></a>
+                <button class="heart" data-id="6" aria-label="Save"><svg width="16" height="16"><use href="#heart"/></svg></button>
+              </div>
+              <a href="product.html?id=6" class="p-name">Runner One</a>
+              <p class="price">$80</p>
+            </article>
+            <article class="product-card">
+              <div class="img-wrap">
+                <a href="product.html?id=11" class="card-img" aria-label="Classic Cap"><img src="img/11.jpg" alt="Classic Cap"></a>
+                <button class="heart" data-id="11" aria-label="Save"><svg width="16" height="16"><use href="#heart"/></svg></button>
+              </div>
+              <a href="product.html?id=11" class="p-name">Classic Cap</a>
+              <p class="price">$18</p>
+            </article>
+            <article class="product-card">
+              <div class="img-wrap">
+                <a href="product.html?id=16" class="card-img" aria-label="City Backpack"><img src="img/16.jpg" alt="City Backpack"></a>
+                <button class="heart" data-id="16" aria-label="Save"><svg width="16" height="16"><use href="#heart"/></svg></button>
+              </div>
+              <a href="product.html?id=16" class="p-name">City Backpack</a>
+              <p class="price">$60</p>
+            </article>
+            <article class="product-card">
+              <div class="img-wrap">
+                <a href="product.html?id=4" class="card-img" aria-label="Ash Zip Hoodie"><img src="img/4.jpg" alt="Ash Zip Hoodie"></a>
+                <button class="heart" data-id="4" aria-label="Save"><svg width="16" height="16"><use href="#heart"/></svg></button>
+              </div>
+              <a href="product.html?id=4" class="p-name">Ash Zip Hoodie</a>
+              <p class="price">$52</p>
+            </article>
+            <article class="product-card">
+              <div class="img-wrap">
+                <a href="product.html?id=7" class="card-img" aria-label="Runner Orange"><img src="img/7.jpg" alt="Runner Orange"></a>
+                <button class="heart" data-id="7" aria-label="Save"><svg width="16" height="16"><use href="#heart"/></svg></button>
+              </div>
+              <a href="product.html?id=7" class="p-name">Runner Orange</a>
+              <p class="price">$85</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="new-strip">
+      <span class="new-strip__badge">NEW</span>
+      <div class="new-strip__text">
+        <span class="new-strip__tag">Just dropped</span>
+        <h2>New Arrivals</h2>
+        <p>Fresh styles, added this week.</p>
+        <a href="New-Arrivals.html?filter=new" class="new-strip__btn">Explore more →</a>
+      </div>
+    </section>
+    <!-- 0. Intro strip -->
+    <section class="about-hero" id="about">
+      <div class="about-hero__inner">
+        <span class="about-tag">Who we are</span>
+        <h1>About Us</h1>
+        <p>Modern clothing, picked with care and delivered with a smile.</p>
+        <nav class="about-hero__crumbs"><a href="index.html">Home</a><span>›</span>About Us</nav>
+      </div>
+    </section>
+<!-- 1. Story -->
+    <section class="about-story" id="about">
+      <div class="about-wrap about-story__grid">
+        <div class="about-story__img">
+          <img src="img/about-owner.jpg" alt="Founder of our store">
+          <span class="about-story__label">Meet the founder</span>
+        </div>
+        <div class="about-story__text">
+          <span class="about-tag">Our story</span>
+          <h2>Clothing made to feel as good as it looks</h2>
+          <p>We started with a simple idea: modern clothes should be easy to find, comfortable to wear and fairly priced.</p>
+          <p>Every piece in our store is picked for quality, fit and style, so you can dress well without second-guessing.</p>
+          <a href="shop.html" class="about-btn">Explore the shop →</a>
+        </div>
+      </div>
+    </section>
+<!-- 2. Stats -->
+    <section class="about-stats">
+      <div class="about-wrap about-stats__grid">
+        <div class="about-stats__item">
+          <div class="about-stats__num">500<span>+</span></div>
+          <div class="about-stats__label">Products</div>
+        </div>
+        <div class="about-stats__item">
+          <div class="about-stats__num">10K<span>+</span></div>
+          <div class="about-stats__label">Happy customers</div>
+        </div>
+        <div class="about-stats__item">
+          <div class="about-stats__num">48<span>h</span></div>
+          <div class="about-stats__label">Fast delivery</div>
+        </div>
+        <div class="about-stats__item">
+          <div class="about-stats__num">100<span>%</span></div>
+          <div class="about-stats__label">Quality checked</div>
+        </div>
+      </div>
+    </section>
+<!-- 3. Product band -->
+    <section class="about-band">
+      <div class="about-band__top">
+        <div class="about-wrap about-band__text">
+          <span class="about-tag">Our products</span>
+          <h2>Clothes you’ll actually love wearing</h2>
+          <p>From everyday essentials to standout pieces, every item is picked for fabric, fit and style.</p>
+        </div>
+      </div>
+      <div class="about-band__cards">
+        <div class="about-wrap about-band__grid">
+          <div class="about-card">
+            <div class="about-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M8 3L3 6l2.5 4L8 9v11h8V9l2.5 1L21 6l-5-3a4 4 0 0 1-8 0z"/></svg>
+            </div>
+            <h3>Everyday essentials</h3>
+            <p>Tees, hoodies and joggers made for comfort, wash after wash.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 3l2.5 5.5L20 9.5l-4 4 1 6-5-2.5-5 2.5 1-6-4-4 5.5-1z"/></svg>
+            </div>
+            <h3>Fresh drops weekly</h3>
+            <p>New styles land every week, so there’s always something new to try.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5"/></svg>
+            </div>
+            <h3>Outfits that match</h3>
+            <p>Pieces designed to mix and match, so building a look is easy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- 4. Closing banner -->
+    <section class="about-cta">
+      <div class="about-wrap">
+        <div class="about-cta__text">
+          <span class="about-tag">Ready when you are</span>
+          <h2>Find your next favourite fit</h2>
+          <p>Browse the latest arrivals and everyday essentials.</p>
+          <a href="shop.html" class="about-btn">Shop the collection →</a>
+        </div>
+      </div>
+    </section>
+    <!--------Contact Us-------->
+    <section class="contact-us">
+      <div class="contact-us-intro" id="contact">
+        <div class="contact-us-overlay">
+          <h1>Contact Us</h1>
+        </div>
+      </div>
+      <div class="contact-us-intro-text">
+        <h2>Get in Touch</h2>
+        <p>Have a question about a product, an order, or delivery? Send us a message and we'll get back to you as quickly as we can.<br>We're always happy to help.</p>
+      </div>
+      <div class="contact-us-means">
+        <div class="contact-us-methods">
+          <a href="tel:+2349118335328"class="contact-us-stuffs">
+            <i class="fa-solid fa-phone"></i>
+            <span>09118335328 <br />09055053866</span>
+          </a>
+        </div>
+        <div class="contact-us-methods">
+          <a href="mailto:maxedcrusader@gmail.com"class="contact-us-stuffs">
+            <i class="fa-solid fa-envelope"></i>
+            <span>maxedcrusader@gmail.com</span>
+          </a>
+        </div>
+        <div class="contact-us-methods">
+          <a href="https://wa.me/2349118335328"class="contact-us-stuffs">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>+2349118335328</span>
+          </a>
+        </div>
+      </div>
+      <div class="contact-us-form">
+        <div class="contact-us-form-text">
+          <h3>Send us a message</h3>
+          <p>Fill in the form and we'll reply as soon as we can.</p>
+        </div>
+        <div class="contact-us-form-space">
+          <form id="contactForm"class="contact-form">
+            <input type="text" name="name" placeholder="Name" required id="cName">
+            <input type="email" name="email" placeholder="Email" required id="cEmail">
+            <input type="tel" name="phone" placeholder="Phone" id="cPhone">
+            <textarea name="message" placeholder="Message" required id="cMessage"></textarea>
+            <button type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3 class="footer-logo">My<span>Shop</span></h3>
+          <p>Everyday essentials and standout pieces, picked for fabric, fit and style.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="index.html">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="#">Cart</a>
+          <a href="#">Delivery</a>
+          <a href="#">Returns</a>
+          <a href="#">FAQs</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="tel:+2349118335328"><i class="fa-solid fa-phone"></i>09118335328</a>
+          <a href="mailto:maxedcrusader@gmail.com"><i class="fa-solid fa-envelope"></i>maxedcrusader@gmail.com</a>
+          <a href="https://wa.me/2349118335328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i>+2349118335328</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 MyShop. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+    <script type="module" src="auth-state.js"></script>
+    <script src="shop.js"></script>
+</body>
+</html>
