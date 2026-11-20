@@ -1377,7 +1377,7 @@ html {
   .hero::before { background: linear-gradient(90deg, rgba(20,22,24,.5) 0%, rgba(20,22,24,0) 70%); }
 
   .navbar { padding: 18px 5% 12px; }
-  .logo { font-size: 1.35rem; letter-spacing: 4px; }
+  .logo { font-size: 1.15rem; letter-spacing: 4px; }
   .menu-btn { display: block; }
   .nav-links {
     position: fixed; top: 0; right: 0;
@@ -1392,42 +1392,43 @@ html {
     z-index: 1;
   }
   .nav-links.open { transform: translateX(0); visibility: visible; box-shadow: -20px 0 40px rgba(0,0,0,.45); }
-  .nav-links a { display: block; padding: 18px 28px; border: 0; font-size: .9rem; letter-spacing: 3px; }
+  .nav-links a { display: block; padding: 18px 28px; border: 0; font-size: .77rem; letter-spacing: 3px; }
   .nav-links a.active { color: var(--orange); }
   .nav-icons { position: relative; z-index: 2; }
 
   .hero-content { flex-direction: column; align-items: flex-start; padding-top: 0; padding-bottom: 5vh; }
   .hero-left { max-width: 64%; margin-left: 0; }
-  .eyebrow { font-size: .72rem; letter-spacing: 2.5px; gap: 10px; margin-bottom: 10px; }
+  .eyebrow { font-size: .61rem; letter-spacing: 2.5px; gap: 10px; margin-bottom: 10px; }
   .eyebrow::before { width: 18px; }
   /* heading size follows the screen width AND height, so it stays above the figure's head */
-  h1 { font-size: clamp(2rem, min(11.5vw, 5.9vh), 3rem); line-height: .95; margin-bottom: 10px; }
+  h1 { font-size: clamp(1.7rem, min(9.8vw, 5vh), 2.55rem); line-height: .95; margin-bottom: 10px; }
   .lead { display: none; }
-  .btn { padding: 9px 20px; font-size: .66rem; letter-spacing: 2px; }
+  .btn { padding: 9px 20px; font-size: .56rem; letter-spacing: 2px; }
   .hero-right { width: 36%; min-width: 0; }
-  .small-title { font-size: 1rem; }
-  .small-text { font-size: .72rem; }
+  .small-title { font-size: .85rem; }
+  .small-text { font-size: .61rem; }
   .features-inner { grid-template-columns: repeat(2, 1fr); row-gap: 22px; padding: 24px 5%; }
   .feature { flex-direction: row; text-align: left; gap: 12px; padding: 0 6px; }
   .feature:nth-child(3) { border-left: 0; }
   .feature-icon { width: 40px; height: 40px; }
-  .feature h3 { font-size: 1rem; }
-  .feature p { font-size: .68rem; }
+  .feature h3 { font-size: .85rem; }
+  .feature p { font-size: .58rem; }
   /* shop section: 2x2 strip, 2 cards per row */
   .features-inner { grid-template-columns: repeat(2, 1fr); row-gap: 22px; padding: 24px 5%; }
   .feature { flex-direction: row; text-align: left; gap: 12px; padding: 0 6px; }
   .feature:nth-child(3) { border-left: 0; }
   .feature-icon { width: 40px; height: 40px; }
-  .feature h3 { font-size: 1rem; }
-  .feature p { font-size: .68rem; }
+  .feature h3 { font-size: .85rem; }
+  .feature p { font-size: .58rem; }
   .section { padding-top: 40px; }
-  .section h2 { font-size: 1.7rem; }
-  .view-all { font-size: .65rem; }
+  .section h2 { font-size: 1.45rem; }
+  .view-all { font-size: .55rem; }
   .cat-grid, .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .cat-card { padding: 12px 12px 0; }
-  .cat-card h3 { font-size: .95rem; }
-  .shop-now { font-size: .7rem; }
-  .p-name { font-size: .85rem; }
+  .cat-card h3 { font-size: .81rem; }
+  .shop-now { font-size: .6rem; }
+  .p-name { font-size: .72rem; }
+  .price { font-size: .89rem; }
   .heart { width: 30px; height: 30px; top: 8px; right: 8px; }
   .about-hero {
     min-height: 360px;
