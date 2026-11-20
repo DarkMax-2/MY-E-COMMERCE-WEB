@@ -1398,7 +1398,7 @@ html {
 
   .hero-content { flex-direction: column; align-items: flex-start; padding-top: 0; padding-bottom: 5vh; }
   .hero-left { max-width: 64%; margin-left: 0; }
-  .eyebrow { font-size: .61rem; letter-spacing: 2.5px; gap: 10px; margin-bottom: 10px; }
+  .eyebrow { font-size: .5rem; letter-spacing: 1.5px; gap: 8px; margin-bottom: 10px; text-shadow: 0 1px 6px rgba(0,0,0,.85); }
   .eyebrow::before { width: 18px; }
   /* heading size follows the screen width AND height, so it stays above the figure's head */
   h1 { font-size: clamp(1.7rem, min(9.8vw, 5vh), 2.55rem); line-height: .95; margin-bottom: 10px; }
@@ -1689,6 +1689,32 @@ html {
     padding: 12px 20px;
   }
 }
+@media (max-width: 600px) {
+  /* account box */
+  .user-float { padding: 8px 10px; gap: 10px; }
+  .user-float-avatar { width: 34px; height: 34px; font-size: 17px; }
+  .user-float-hi { font-size: 14px; max-width: 95px; }
+  .user-float-links { gap: 10px; }
+  .user-float-links a { font-size: 12px; }
+
+  /* contact section */
+  .contact-us-intro-text h2 { font-size: 26px; }
+  .contact-us-intro-text p { font-size: 14.5px; }
+  .contact-us-stuffs span { font-size: 19px; }
+  .contact-us-stuffs i { font-size: 23px; }
+  .contact-us-form-text h3 { font-size: 27px; }
+  .contact-us-form-text p { font-size: 13.5px; }
+  .contact-us-form-space input,
+  .contact-us-form-space textarea { font-size: 13px; }
+  .contact-us-form-space button { font-size: 11.5px; }
+
+  /* footer */
+  .footer-logo { font-size: 24px; }
+  .footer-brand p { font-size: 13px; }
+  .footer-col h4 { font-size: 14.5px; }
+  .footer-col a { font-size: 12px; }
+  .footer-bottom p { font-size: 11px; }
+    }
 html.menu-open { overflow: hidden; }
 body.menu-open { position: fixed; left: 0; right: 0; width: 100%; overflow: hidden; }
 
