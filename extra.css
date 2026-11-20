@@ -385,3 +385,14 @@ body.shop-page { background: #202326; }
 .sk-line.short { width: 50%; }
 .sk-btn { height: 40px; border-radius: 30px; }
 img.sk { min-height: 120px; }
+
+@media (max-width: 640px) {
+  .product-info h1 { font-size: 24px; }
+  .product-price { font-size: 20px; }
+  .dropdown-btn, .cart-btn { font-size: 14px; }
+  .pay-item p, .whatsapp-btn, .delivery-note { font-size: 12px; }
+  .pay-number { font-size: 15px; }
+  .delivery-box label, .d-gps-status, .d-msg { font-size: 11px; }
+  .new-card h3 { font-size: 14px; }
+  .new-tag { font-size: 10px; }
+}
